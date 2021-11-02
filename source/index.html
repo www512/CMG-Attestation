@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Convergent Media Group">
+  <title>Convergent Media Group</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserrat.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-500.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-600.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-700.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-800.woff2" as="font">
+</head>
+
+<body>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-xxl px-lg-4">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <a class="navbar-brand order-lg-first" href="#"><span>Яркий</span> логотип</a>
+        <a class="user d-flex flex-column align-items-center order-lg-last" href="#">
+          <img src="img/logo.svg" width="48" alt="user logo"><span class="d-none d-lg-block">Владимир Баранов</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navigation-list navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item">
+              <a class="nav-link" href="#articles">Статьи</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#slider">Тесты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">Convergent</h1>
+    <section class="slider" id="slider">
+      <h2 class="visually-hidden">Тесты</h2>
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <p class="slider__title">Узнайте, подходит ли вам Convergent Activations!</p>
+              <p>Тест 1</p>
+              <button>Узнать</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <p class="slider__title">Узнайте, подходит ли вам Convergent Activations!</p>
+              <p>Тест 2</p>
+              <button>Узнать</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <p class="slider__title">Узнайте, подходит ли вам Convergent Activations!</p>
+              <p>Тест 3</p>
+              <button>Узнать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <h2 class="visually-hidden">Активности</h2>
+      <div class="container-xxl px-lg-4">
+        <div class="order-prize">
+          <p class="promo__title">Привет, username</p>
+          <p>В Личном кабинете тебя ждут <span>3 приза</span> для заказа</p>
+          <button>Заказать</button>
+        </div>
+        <div class="row gx-sm-3 gx-lg-5 promo__blocks">
+          <div class="col-sm-6">
+            <div class="promo__block d-sm-flex flex-sm-column justify-content-sm-between">
+              <div class="promo__item promo__block-receipt d-xl-flex align-items-xl-center justify-content-xl-between">
+                <p>Зарегистрируй чек и получи приз!</p>
+                <button>Загрузить чек</button>
+              </div>
+              <div class="promo__item promo__block-promocode d-xl-flex align-items-xl-center justify-content-xl-between">
+                <p>Зарегистрируй промокод!</p>
+                <button>Зарегистрировать</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="promo__know d-sm-flex flex-sm-column flex-lg-row justify-content-sm-between">
+              <div class="promo__know-candy"></div>
+              <div class="promo__know-content d-lg-flex flex-lg-column justify-content-lg-center flex-sm-shrink-0">
+                <p>Какая ты конфета в этой коробочке жизни?</p>
+                <p class="promo__annotation">Узнай свой вкус!</p>
+                <button>Узнать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="articles" id="articles">
+      <div class="container-xxl px-lg-4">
+        <h2>Статьи</h2>
+        <div class="row gx-sm-3 gx-lg-4 articles__list justify-content-sm-center">
+          <div class="col-sm-6 col-lg-4 articles__item">
+            <div class="articles__content">
+              <picture>
+                <source media="(max-width: 480px)" srcset="/img/game-mob.jpg, /img/game-mob@2x.jpg 1.5x">
+                <source media="(min-width: 481px)" srcset="/img/game.jpg, /img/game@2x.jpg 1.5x">
+                <img src="/img/game-mob.jpg" alt="" />
+              </picture>
+              <time datetime="2020-02-01">01.02.2020</time>
+              <h3>Геймификация: вредные советы / Отбить&nbsp;у&nbsp;сотрудника интерес к рабочему процессу:<br />ВРЕДНЫЕ советы о геймификации</h3>
+              <p>Геймификация – введение в рабочий процесс дополнительных игровых правил. Не станем повторять уже известные факты о геймификации и пойдём от обратного: 4 совета о том, как НЕ НАДО внедрять геймификацию.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 articles__item">
+            <div class="articles__content">
+              <picture>
+                <source media="(max-width: 480px)" srcset="/img/hr-mob.jpg, /img/hr-mob@2x.jpg 1.5x">
+                <source media="(min-width: 481px)" srcset="/img/hr.jpg, /img/hr@2x.jpg 1.5x">
+                <img src="/img/hr-mob.jpg" alt="" />
+              </picture>
+              <time datetime="2020-02-06">06.02.2020</time>
+              <h3>Геймификация в HR:<br>6 практических советов</h3>
+              <p>В предыдущей статье мы активно шутили и раздавали вредные советы о том, как отбить у сотрудников всяческий интерес к работе в компании. А сейчас обсудим, как внедрить геймификацию в рабочий процесс.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 articles__item">
+            <div class="articles__content">
+              <picture>
+                <source media="(max-width: 480px)" srcset="/img/project-mob.jpg, /img/project-mob@2x.jpg 1.5x">
+                <source media="(min-width: 481px)" srcset="/img/project.jpg, /img/project@2x.jpg 1.5x">
+                <img src="/img/project-mob.jpg" alt="" />
+              </picture>
+              <time datetime="2020-02-02">02.02.2020</time>
+              <h3>Бережливый запуск HR-проектов:<br>как не потратить сразу кучу денег</h3>
+              <p>Применяем lean-подход к HR на примере процесса адаптации.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-xxl px-lg-4">
+      <ul class="footer-list d-flex flex-column flex-lg-row flex-lg-wrap">
+        <li><a href="#">Положение о конфиденциальности</a></li>
+        <li><a href="#">Правила платформы</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </footer>
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+.slider {
+  padding-bottom: 30px;
+
+  .slider__title {
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $white;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 6px;
+  margin-left: 6px;
+  background-color: $white;
+  border: 1px solid $aqua;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: $aqua;
+}
+
+.carousel-item {
+  padding: 25.93vw 16px 38.13vw;
+  background-image: url("../img/banner-mob.jpg");
+  background-size: 100% 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: $aqua;
+
+  button {
+    margin-top: 19px;
+    padding: 10px 44px;
+    display: block;
+    background-color: $dark-blue;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+    max-width: 148px;
+
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+  }
+}
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .carousel-item {
+    background-image: url("../img/banner-mob@2x.jpg");
+  }
+}
+
+.carousel-caption {
+  position: static;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: $white;
+  text-align: left;
+  max-width: 410px;
+}
+
+.carousel-indicators {
+  bottom: -22px;
+  margin-bottom: 0;
+}
+
+@include media-breakpoint-up(md) {
+  .slider {
+    margin: 0 auto;
+    padding-bottom: 0;
+    max-width: 1366px;
+
+    .slider__title {
+      margin-bottom: 36px;
+      font-size: 38px;
+    }
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 11px;
+    height: 11px;
+  }
+
+  .carousel-indicators {
+    bottom: 25px;
+  }
+
+  .carousel-item {
+    padding: 108px 111px 105px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+
+    button {
+      margin-top: 40px;
+      padding: 13px 40px;
+      font-size: 18px;
+      max-width: 157px;
+    }
+  }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .carousel-item {
+      background-image: url("../img/banner@2x.jpg");
+    }
+  }
+
+  .carousel-caption {
+    max-width: 700px;
+
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .slider .slider__title {
+      font-size: 48px;
+  }
+}
