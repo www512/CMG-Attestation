@@ -1,13 +1,6 @@
 .DS_Store
 .idea
 .vscode
-.editorconfig
-.eslintrc
-.gitattributes
-.gitignore
-.stylelintrc
-gulpfile.js
-package.json
 package-lock.json
 *.ai
 *.log
@@ -16,6 +9,6 @@ package-lock.json
 *.sublime*
 node_modules/
 npm-debug.*
-source/
-build/
+source/css/*.css
+source/css/*.map
 Thumbs.db
