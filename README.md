@@ -1,6 +1,6 @@
 # CMG Attestation
 
-**Сайт:** https://www512.github.io/CMG-Attestation/
+**Сайт:** https://www512.github.io/cmg-attestation/
 
 
 ### Техническое задание CMG Attestation
