@@ -75,11 +75,11 @@
   .promo__block {
     margin-bottom: 24px;
 
-    .promo__block-receipt {
+    &-receipt {
       background-color: $yellow;
     }
 
-    .promo__block-promocode {
+    &-promocode {
       background-color: $purple;
     }
   }
@@ -87,19 +87,19 @@
   .promo__know {
     border-radius: 20px;
 
-    .promo__know-candy {
+    &-candy {
       min-height: 167px;
       background: url("../img/candy-mob.png") left top / cover no-repeat;
       border-radius: 20px 20px 0 0;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .promo__know-candy {
+      &-candy {
         background: url("../img/candy-mob@2x.png") left top / cover no-repeat;
       }
     }
 
-    .promo__know-content {
+    &-content {
       border-radius: 0 0 20px 20px;
       padding: 17px;
       background-color: $aqua;
@@ -174,7 +174,7 @@
 
     .promo__know {
       height: 100%;
-      .promo__know-candy {
+      &-candy {
         height: 100%;
         min-height: 110px;
       }
@@ -232,7 +232,7 @@
       height: 100%;
 
 
-      .promo__know-candy {
+      &-candy {
         border-radius: 20px 0 0 20px;
         background: url("../img/candy.png") left top no-repeat;
         background-size: cover;
@@ -240,12 +240,12 @@
       }
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        .promo__know-candy {
+        &-candy {
           background: url("../img/candy@2x.png") left top / cover no-repeat;
         }
       }
 
-      .promo__know-content {
+      &-content {
         border-radius: 0 20px 20px 0;
         padding: 0 32px;
         width: 59.68504%;

@@ -1,7 +1,7 @@
 .slider {
   padding-bottom: 30px;
 
-  .slider__title {
+  &__title {
     margin-bottom: 16px;
     font-size: 28px;
     line-height: 1.2;
@@ -85,7 +85,7 @@
     padding-bottom: 0;
     max-width: 1366px;
 
-    .slider__title {
+    &__title {
       margin-bottom: 36px;
       font-size: 38px;
     }
